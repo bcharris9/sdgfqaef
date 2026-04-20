@@ -1,0 +1,31 @@
+{
+  "variant_id": "Lab2_2A_333__golden",
+  "return_code": 0,
+  "success": true,
+  "log_path": "pipeline\\out_all_labs_rich_v1_train\\Lab2_2A_333\\golden\\Lab2_2A_333__golden.log",
+  "raw_path": null,
+  "measurements": {
+    "solver": "Normal",
+    "tnom": 27.0,
+    "temp": 27.0,
+    "method": "trap",
+    "v_n001_max": 1.5,
+    "v_n001_min": 1.5,
+    "v_n001_rms": 1.5,
+    "v_n001_avg": 1.5,
+    "v_n001_pp": 0.0,
+    "i_r2_max": -0.00450450461358,
+    "i_r2_min": -0.00450450461358,
+    "i_r2_rms": 0.00450450461358,
+    "i_r2_avg": -0.00450450461358,
+    "i_r2_pp": 0.0,
+    "i_v1_max": -0.00450450461358,
+    "i_v1_min": -0.00450450461358,
+    "i_v1_rms": 0.00450450461358,
+    "i_v1_avg": -0.00450450461358,
+    "i_v1_pp": 0.0
+  },
+  "stderr": "",
+  "stdout": "",
+  "netlist_path": "pipeline\\out_all_labs_rich_v1_train\\Lab2_2A_333\\golden\\Lab2_2A_333__golden.cir"
+}

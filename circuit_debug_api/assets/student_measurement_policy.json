@@ -1,0 +1,6407 @@
+{
+  "circuit_count": 98,
+  "collapsed_group_count": 409,
+  "circuits": [
+    {
+      "circuit_name": "Lab1_1_100",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_1_1000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_1_10000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_1_100000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_2A_2_0",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_2A_2_100",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_2A_2_1000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_2A_2_10000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_2A_2_100000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_2A_5_0",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_2A_5_100",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_2A_5_1000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_2A_5_10000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_2A_5_100000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_2B_2_0",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_2B_2_100",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_2B_2_1000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_2B_2_10000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_2B_2_100000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_2B_5_0",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_2B_5_100",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_2B_5_1000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_2B_5_10000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab1_2B_5_100000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab2_1_100",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab2_1_1000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab2_1_200",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab2_1_2000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab2_1_333",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab2_1_50",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab2_1_500",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab2_2A_100",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab2_2A_1000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab2_2A_200",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab2_2A_2000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab2_2A_333",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab2_2A_50",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab2_2A_500",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab2_2B_100",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab2_2B_1000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab2_2B_200",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab2_2B_2000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab2_2B_333",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab2_2B_50",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab2_2B_500",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab3_1",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N004",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab3_1_V1_only",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab3_1_V2_only",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab3_2",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N004",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N005",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab3_2_V1_only",
+      "collapsed_nodes": [
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab3_2_V2_only",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N004",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab5_1",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N004",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N005",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N006",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N007",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N008",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N009",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "P001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "P002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "I1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "Lab6_1",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": []
+    },
+    {
+      "circuit_name": "Lab7_1",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": []
+    },
+    {
+      "circuit_name": "Lab8_CD",
+      "collapsed_nodes": [
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N006",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": []
+    },
+    {
+      "circuit_name": "Lab8_OD",
+      "collapsed_nodes": [
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N006",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": []
+    },
+    {
+      "circuit_name": "Lab8_SOD",
+      "collapsed_nodes": [
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N006",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": []
+    },
+    {
+      "circuit_name": "Lab8_SUD",
+      "collapsed_nodes": [
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N006",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": []
+    },
+    {
+      "circuit_name": "Lab8_UD",
+      "collapsed_nodes": [
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N006",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": []
+    },
+    {
+      "circuit_name": "Lab9_1",
+      "collapsed_nodes": [
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N006",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": []
+    },
+    {
+      "circuit_name": "Lab9_2",
+      "collapsed_nodes": [
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N006",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": []
+    },
+    {
+      "circuit_name": "lab4_task1_part1_100",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VE",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": []
+    },
+    {
+      "circuit_name": "lab4_task1_part1_1000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VE",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task1_part1_200",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VE",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task1_part1_300",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VE",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task1_part1_500",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": []
+    },
+    {
+      "circuit_name": "lab4_task1_part2_1000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VD",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task1_part2_10000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VD",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task1_part2_100000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VD",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task1_part2_1500",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VD",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task1_part2_2000",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VD",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task1_part2_3300",
+      "collapsed_nodes": [
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VD",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task1_part3_1000",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task1_part3_10000",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task1_part3_100000",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task1_part3_1500",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task1_part3_2000",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task1_part3_3300",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task2_part1_-1",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task2_part1_-2",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task2_part1_-3",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task2_part1_-4",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task2_part1_-5",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task2_part1_1",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task2_part1_2",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task2_part1_3",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task2_part1_4",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task2_part1_5",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task2_part2_1",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task2_part2_2",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task2_part2_3",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task2_part2_4",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task2_part2_5",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task3_1",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task3_2",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task3_3",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VOUT",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task3_4",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    },
+    {
+      "circuit_name": "lab4_task3_5",
+      "collapsed_nodes": [
+        {
+          "node_name": "-VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N001",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N002",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "N003",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "node_name": "VCC",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ],
+      "collapsed_source_currents": [
+        {
+          "source_name": "V1",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V2",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        },
+        {
+          "source_name": "V3",
+          "available_stats": [
+            "max",
+            "min",
+            "rms",
+            "avg",
+            "pp"
+          ],
+          "student_available_stats": [
+            "max"
+          ],
+          "student_primary_stat": "max"
+        }
+      ]
+    }
+  ]
+}

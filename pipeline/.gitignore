@@ -1,0 +1,10 @@
+# Generated pipeline outputs
+out/
+out_one_lab/
+out_one_lab_all*/
+
+# Temporary curated circuit subsets
+tmp_*/
+
+# Local run logs
+*.log

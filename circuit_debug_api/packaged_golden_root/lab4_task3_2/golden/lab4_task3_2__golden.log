@@ -1,0 +1,75 @@
+LTspice 26.0.1 for Windows
+Circuit: C:\ft\ltspice_llm_pipeline_vnext_20260303\pipeline\out_all_labs_rich_v1_train\lab4_task3_2\golden\lab4_task3_2__golden.cir
+Start Time: Thu Mar 26 18:51:10 2026
+solver = Normal
+Maximum thread count: 24
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.027 seconds.
+
+Files loaded:
+C:\ft\ltspice_llm_pipeline_vnext_20260303\pipeline\out_all_labs_rich_v1_train\lab4_task3_2\golden\lab4_task3_2__golden.cir
+C:\Users\bchar\OneDrive\Documents\LTspice\LM339.lib
+
+v__vcc_max: MAX(V(-VCC))=-5 FROM 0 TO 0.01
+v__vcc_min: MIN(V(-VCC))=-5 FROM 0 TO 0.01
+v__vcc_rms: RMS(V(-VCC))=5 FROM 0 TO 0.01
+v__vcc_avg: AVG(V(-VCC))=-5 FROM 0 TO 0.01
+v__vcc_pp: PP(V(-VCC))=0 FROM 0 TO 0.01
+v_n001_max: MAX(V(N001))=3 FROM 0 TO 0.01
+v_n001_min: MIN(V(N001))=3 FROM 0 TO 0.01
+v_n001_rms: RMS(V(N001))=3 FROM 0 TO 0.01
+v_n001_avg: AVG(V(N001))=3 FROM 0 TO 0.01
+v_n001_pp: PP(V(N001))=0 FROM 0 TO 0.01
+v_n002_max: MAX(V(N002))=2.0000500679 FROM 0 TO 0.01
+v_n002_min: MIN(V(N002))=2.0000500679 FROM 0 TO 0.01
+v_n002_rms: RMS(V(N002))=2.0000500679 FROM 0 TO 0.01
+v_n002_avg: AVG(V(N002))=2.0000500679 FROM 0 TO 0.01
+v_n002_pp: PP(V(N002))=0 FROM 0 TO 0.01
+v_n003_max: MAX(V(N003))=2 FROM 0 TO 0.01
+v_n003_min: MIN(V(N003))=2 FROM 0 TO 0.01
+v_n003_rms: RMS(V(N003))=2 FROM 0 TO 0.01
+v_n003_avg: AVG(V(N003))=2 FROM 0 TO 0.01
+v_n003_pp: PP(V(N003))=0 FROM 0 TO 0.01
+v_vcc_max: MAX(V(VCC))=5 FROM 0 TO 0.01
+v_vcc_min: MIN(V(VCC))=5 FROM 0 TO 0.01
+v_vcc_rms: RMS(V(VCC))=5 FROM 0 TO 0.01
+v_vcc_avg: AVG(V(VCC))=5 FROM 0 TO 0.01
+v_vcc_pp: PP(V(VCC))=0 FROM 0 TO 0.01
+v_vout_max: MAX(V(Vout))=-4.98207187653 FROM 0 TO 0.01
+v_vout_min: MIN(V(Vout))=-4.98207187653 FROM 0 TO 0.01
+v_vout_rms: RMS(V(Vout))=4.98207187653 FROM 0 TO 0.01
+v_vout_avg: AVG(V(Vout))=-4.98207187653 FROM 0 TO 0.01
+v_vout_pp: PP(V(Vout))=0 FROM 0 TO 0.01
+i_r1_max: MAX(I(R1))=0.0010000000475 FROM 0 TO 0.01
+i_r1_min: MIN(I(R1))=0.0010000000475 FROM 0 TO 0.01
+i_r1_rms: RMS(I(R1))=0.0010000000475 FROM 0 TO 0.01
+i_r1_avg: AVG(I(R1))=0.0010000000475 FROM 0 TO 0.01
+i_r1_pp: PP(I(R1))=0 FROM 0 TO 0.01
+i_r2_max: MAX(I(R2))=0.0010000000475 FROM 0 TO 0.01
+i_r2_min: MIN(I(R2))=0.0010000000475 FROM 0 TO 0.01
+i_r2_rms: RMS(I(R2))=0.0010000000475 FROM 0 TO 0.01
+i_r2_avg: AVG(I(R2))=0.0010000000475 FROM 0 TO 0.01
+i_r2_pp: PP(I(R2))=0 FROM 0 TO 0.01
+i_r3_max: MAX(I(R3))=4.99686017008e-08 FROM 0 TO 0.01
+i_r3_min: MIN(I(R3))=4.99686017008e-08 FROM 0 TO 0.01
+i_r3_rms: RMS(I(R3))=4.99686017008e-08 FROM 0 TO 0.01
+i_r3_avg: AVG(I(R3))=4.99686017008e-08 FROM 0 TO 0.01
+i_r3_pp: PP(I(R3))=0 FROM 0 TO 0.01
+i_v1_max: MAX(I(V1))=4.99686017008e-08 FROM 0 TO 0.01
+i_v1_min: MIN(I(V1))=4.99686017008e-08 FROM 0 TO 0.01
+i_v1_rms: RMS(I(V1))=4.99686017008e-08 FROM 0 TO 0.01
+i_v1_avg: AVG(I(V1))=4.99686017008e-08 FROM 0 TO 0.01
+i_v1_pp: PP(I(V1))=0 FROM 0 TO 0.01
+i_v2_max: MAX(I(V2))=-0.0012160326587 FROM 0 TO 0.01
+i_v2_min: MIN(I(V2))=-0.0012160326587 FROM 0 TO 0.01
+i_v2_rms: RMS(I(V2))=0.0012160326587 FROM 0 TO 0.01
+i_v2_avg: AVG(I(V2))=-0.0012160326587 FROM 0 TO 0.01
+i_v2_pp: PP(I(V2))=0 FROM 0 TO 0.01
+i_v3_max: MAX(I(V3))=0.000215982741793 FROM 0 TO 0.01
+i_v3_min: MIN(I(V3))=0.000215982741793 FROM 0 TO 0.01
+i_v3_rms: RMS(I(V3))=0.000215982741793 FROM 0 TO 0.01
+i_v3_avg: AVG(I(V3))=0.000215982741793 FROM 0 TO 0.01
+i_v3_pp: PP(I(V3))=0 FROM 0 TO 0.01

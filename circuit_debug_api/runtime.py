@@ -1,0 +1,726 @@
+"""Tabular runtime and feature engineering for circuit fault classification."""
+
+from __future__ import annotations
+
+import json
+import math
+import re
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Any
+
+import joblib
+import numpy as np
+
+PAIR_MC_PO = ("missing_component", "pin_open")
+MEASUREMENT_STATS = ("max", "min", "rms", "avg", "pp")
+
+FAULT_TEMPLATES: dict[str, dict[str, str]] = {
+    "param_drift": {
+        "diagnosis": "parameter drift in one or more components",
+        "fix": "restore drifted parameter values to their intended targets",
+    },
+    "missing_component": {
+        "diagnosis": "missing component in the circuit path",
+        "fix": "reinsert the missing component with the intended value/model",
+    },
+    "pin_open": {
+        "diagnosis": "open connection on a component terminal",
+        "fix": "reconnect the opened pin to its intended node",
+    },
+    "swapped_nodes": {
+        "diagnosis": "swapped terminals on a component/source",
+        "fix": "swap the two connections back to their intended nodes",
+    },
+    "short_between_nodes": {
+        "diagnosis": "unintended short between nodes",
+        "fix": "remove the short and restore proper wiring",
+    },
+    "resistor_value_swap": {
+        "diagnosis": "resistor values were swapped between two resistors",
+        "fix": "restore each resistor to its intended value",
+    },
+    "resistor_wrong_value": {
+        "diagnosis": "wrong resistor value on one resistor",
+        "fix": "change that resistor back to its intended value",
+    },
+    "unknown": {
+        "diagnosis": "unknown fault class from provided measurements",
+        "fix": "inspect wiring and component values",
+    },
+}
+
+
+def safe_measure_name(token: str) -> str:
+    """Normalize a raw measurement token into the key format used by training data."""
+    # Match pipeline/generate_variants.py safe_measure_name()
+    cleaned = re.sub(r"[^A-Za-z0-9_.$]", "_", token)
+    if not cleaned:
+        return "x"
+    if cleaned[0].isdigit():
+        return f"n_{cleaned}"
+    return cleaned
+
+
+def measurement_key_for_node(node_name: str, stat: str = "max") -> str:
+    """Return the canonical measurement key for a node-voltage reading."""
+    return f"v_{safe_measure_name(node_name)}_{stat}".lower()
+
+
+def measurement_key_for_vsource_current(source_name: str, stat: str = "max") -> str:
+    """Return the canonical measurement key for a voltage-source current reading."""
+    return f"i_{safe_measure_name(source_name)}_{stat}".lower()
+
+
+def family_id(circuit_name: str) -> str:
+    """Collapse a circuit variant name down to its family identifier."""
+    parts = circuit_name.split("_")
+    return "_".join(parts[:-1]) if len(parts) > 1 else circuit_name
+
+
+def prefix_id(circuit_name: str) -> str:
+    """Return the top-level lab prefix from a circuit name."""
+    return circuit_name.split("_")[0] if "_" in circuit_name else circuit_name
+
+
+def _strip_metric_key(key: str, prefix: str) -> str:
+    """Strip the metric prefix/suffix used in stored measurement keys."""
+    low = key.lower()
+    if not low.startswith(prefix):
+        return key
+    for stat in MEASUREMENT_STATS:
+        suffix = f"_{stat}"
+        if low.endswith(suffix):
+            return low[len(prefix) : -len(suffix)]
+    return key
+
+
+def measurement_stat_from_key(key: str) -> str | None:
+    """Extract the trailing stat token from a stored measurement key."""
+    low = str(key).lower()
+    for stat in MEASUREMENT_STATS:
+        if low.endswith(f"_{stat}"):
+            return stat
+    return None
+
+
+def best_effort_display_from_voltage_key(key: str) -> str:
+    """Map a stored voltage measurement key back to a user-facing node label."""
+    token = _strip_metric_key(key, "v_")
+    if token.startswith("_"):
+        token = "-" + token[1:]
+    return token.upper()
+
+
+def best_effort_display_from_current_key(key: str) -> str:
+    """Map a stored current measurement key back to a user-facing source label."""
+    token = _strip_metric_key(key, "i_")
+    if token.startswith("_"):
+        token = "-" + token[1:]
+    return token.upper()
+
+
+def is_student_visible_current_key(key: str) -> bool:
+    """Return True only for current keys students are expected to provide directly."""
+    token = _strip_metric_key(str(key), "i_")
+    if not token:
+        return False
+    prefix = token[:1].upper()
+    return prefix in {"V", "I"}
+
+
+def _values_effectively_equal(values: list[float]) -> bool:
+    """Return True when all provided numeric values are effectively identical."""
+    if len(values) <= 1:
+        return True
+    first = float(values[0])
+    return all(math.isclose(float(value), first, rel_tol=1e-9, abs_tol=1e-12) for value in values[1:])
+
+
+def _student_primary_stat(stats: list[str]) -> str | None:
+    """Choose the single representative stat to ask students for when stats collapse."""
+    ordered = [stat for stat in MEASUREMENT_STATS if stat in stats]
+    if ordered:
+        return ordered[0]
+    return stats[0] if stats else None
+
+
+def _is_constant_profile(golden_values: dict[str, Any], stats: list[str]) -> bool:
+    """Return True when a signal is effectively DC, so one stat represents the rest."""
+    if not isinstance(golden_values, dict):
+        return False
+
+    def num(stat: str) -> float | None:
+        return _numeric(golden_values.get(stat))
+
+    max_v = num("max")
+    min_v = num("min")
+    avg_v = num("avg")
+    rms_v = num("rms")
+    pp_v = num("pp")
+
+    if max_v is None or min_v is None or avg_v is None or rms_v is None or pp_v is None:
+        return False
+    if not math.isclose(float(pp_v), 0.0, rel_tol=1e-9, abs_tol=1e-12):
+        return False
+    if not _values_effectively_equal([float(max_v), float(min_v), float(avg_v)]):
+        return False
+    return math.isclose(abs(float(avg_v)), float(rms_v), rel_tol=1e-9, abs_tol=1e-12)
+
+
+def _student_stat_policy(entry: dict[str, Any]) -> tuple[list[str], bool, str | None]:
+    """Return the student-visible stat set for one node/current entry."""
+    available_stats = list(entry.get("available_stats") or [])
+    golden_values = entry.get("golden_values") or {}
+    if len(available_stats) <= 1 or not isinstance(golden_values, dict):
+        return available_stats, False, _student_primary_stat(available_stats)
+
+    values: list[float] = []
+    for stat in available_stats:
+        numeric = _numeric(golden_values.get(stat))
+        if numeric is None:
+            return available_stats, False, _student_primary_stat(available_stats)
+        values.append(float(numeric))
+
+    if _values_effectively_equal(values) or _is_constant_profile(golden_values, available_stats):
+        primary = _student_primary_stat(available_stats)
+        if primary is not None:
+            return [primary], True, primary
+    return available_stats, False, _student_primary_stat(available_stats)
+
+
+def _measurement_entry_sort_key(entry: dict[str, Any]) -> tuple[int, str]:
+    """Sort measurement entries by a stable stat priority, then by display name."""
+    stats = list(entry.get("available_stats") or [])
+    stat_rank = min((MEASUREMENT_STATS.index(stat) for stat in stats if stat in MEASUREMENT_STATS), default=99)
+    return stat_rank, str(entry.get("node_name") or entry.get("source_name") or "").lower()
+
+
+def _merge_measurement_map(
+    measured: dict[str, float],
+    used_keys: list[str],
+    values: dict[str, float] | None,
+    *,
+    key_builder,
+) -> None:
+    """Merge a simple name->value map into the normalized measurement dictionary as *_max."""
+    if not values:
+        return
+    for raw_name, raw_value in values.items():
+        nv = _numeric(raw_value)
+        if nv is None:
+            continue
+        key = key_builder(str(raw_name), "max")
+        measured[key] = nv
+        used_keys.append(key)
+
+
+def _merge_stat_measurements(
+    measured: dict[str, float],
+    used_keys: list[str],
+    values: dict[str, dict[str, float]] | None,
+    *,
+    key_builder,
+) -> None:
+    """Merge a name->stat->value mapping into the normalized measurement dictionary."""
+    if not values:
+        return
+    for raw_name, stat_map in values.items():
+        if not isinstance(stat_map, dict):
+            continue
+        for raw_stat, raw_value in stat_map.items():
+            stat = str(raw_stat).strip().lower()
+            if stat not in MEASUREMENT_STATS:
+                continue
+            nv = _numeric(raw_value)
+            if nv is None:
+                continue
+            key = key_builder(str(raw_name), stat)
+            measured[key] = nv
+            used_keys.append(key)
+
+
+def _numeric(value: Any) -> float | None:
+    """Return a finite float when the input can be treated as numeric."""
+    if isinstance(value, bool):
+        return 1.0 if value else 0.0
+    if isinstance(value, (int, float)):
+        v = float(value)
+        if math.isfinite(v):
+            return v
+    return None
+
+
+def _agg_feature_block(out: dict[str, Any], prefix: str, values: list[float]) -> None:
+    """Append aggregate statistics for one measurement group into the feature dict."""
+    if not values:
+        out[prefix + "count"] = 0.0
+        return
+
+    arr = np.array(values, dtype=float)
+    aval = np.abs(arr)
+    out[prefix + "count"] = float(arr.size)
+    out[prefix + "sum"] = float(arr.sum())
+    out[prefix + "mean"] = float(arr.mean())
+    out[prefix + "std"] = float(arr.std())
+    out[prefix + "abs_sum"] = float(aval.sum())
+    out[prefix + "abs_mean"] = float(aval.mean())
+    out[prefix + "abs_std"] = float(aval.std())
+    out[prefix + "abs_max"] = float(aval.max())
+    out[prefix + "abs_min"] = float(aval.min())
+
+    q = np.quantile(aval, [0.25, 0.5, 0.75, 0.9, 0.95, 0.99])
+    for name, val in zip(("q25", "q50", "q75", "q90", "q95", "q99"), q):
+        out[prefix + name] = float(val)
+
+    s = np.sort(aval)[::-1]
+    for i in range(min(8, len(s))):
+        out[f"{prefix}top{i + 1}"] = float(s[i])
+
+    for thr in (1e-4, 1e-3, 1e-2, 0.1, 0.5, 1.0, 2.0, 4.0):
+        out[f"{prefix}abs_gt_{str(thr).replace('.', 'p')}"] = float((aval > thr).sum())
+
+    out[prefix + "near_zero"] = float((aval < 1e-3).sum())
+    out[prefix + "near_5rail"] = float((np.abs(aval - 5.0) < 0.25).sum())
+    out[prefix + "near_3v3"] = float((np.abs(aval - 3.3) < 0.25).sum())
+    out[prefix + "pos_count"] = float((arr > 1e-4).sum())
+    out[prefix + "neg_count"] = float((arr < -1e-4).sum())
+
+
+def build_feature_dict_from_measurements(
+    circuit_name: str,
+    measured: dict[str, Any],
+    golden: dict[str, Any],
+    *,
+    sim_success: bool = True,
+) -> dict[str, Any]:
+    """
+    Build the engineered feature dict used by the final tabular xgboost model.
+
+    This mirrors the feature extractor used in the v2+v3+v4+v5 training/eval run.
+    """
+    f: dict[str, Any] = {
+        "lab": circuit_name,
+        "family": family_id(circuit_name),
+        "prefix": prefix_id(circuit_name),
+        "sim_success": 1.0 if sim_success else 0.0,
+    }
+
+    d: dict[str, float] = {}
+    m: dict[str, float] = {}
+    for k, v in (measured or {}).items():
+        nv = _numeric(v)
+        if nv is not None:
+            m[str(k).lower()] = nv
+    gnum: dict[str, float] = {}
+    for k, v in (golden or {}).items():
+        nv = _numeric(v)
+        if nv is not None:
+            gnum[str(k).lower()] = nv
+
+    for k, mv in m.items():
+        if k in gnum:
+            d[k] = mv - gnum[k]
+
+    f["n_deltas"] = float(len(d))
+    f["n_measured"] = float(len(m))
+
+    common_keys = set(d).intersection(m)
+    for k, v in d.items():
+        f["d:" + k] = float(v)
+    for k, v in m.items():
+        f["m:" + k] = float(v)
+    for k in common_keys:
+        dv = d[k]
+        mv = m[k]
+        gv = mv - dv  # reconstructs golden numeric value
+        f["g:" + k] = float(gv)
+        denom = abs(gv) + 1e-6
+        f["adivg:" + k] = abs(dv) / denom
+        f["sgnflip:" + k] = 1.0 if (mv != 0 and gv != 0 and mv * gv < 0) else 0.0
+        f["same_sign:" + k] = 1.0 if (mv == 0 or gv == 0 or mv * gv > 0) else 0.0
+
+    dvals = [v for v in d.values() if math.isfinite(v)]
+    mvals = [v for v in m.values() if math.isfinite(v)]
+    gvals = [m[k] - d[k] for k in common_keys if math.isfinite(m[k]) and math.isfinite(d[k])]
+
+    _agg_feature_block(f, "d_all_", dvals)
+    _agg_feature_block(f, "m_all_", mvals)
+    _agg_feature_block(f, "g_all_", gvals)
+
+    for pfx in ("v_", "i_"):
+        dsub = [v for k, v in d.items() if k.startswith(pfx)]
+        msub = [v for k, v in m.items() if k.startswith(pfx)]
+        gsub = [m[k] - d[k] for k in common_keys if k.startswith(pfx)]
+        _agg_feature_block(f, f"d_{pfx}", dsub)
+        _agg_feature_block(f, f"m_{pfx}", msub)
+        _agg_feature_block(f, f"g_{pfx}", gsub)
+        if pfx == "v_":
+            ratios = [abs(d[k]) / (abs(m[k] - d[k]) + 1e-6) for k in common_keys if k.startswith("v_")]
+            _agg_feature_block(f, "rdelta_v_", ratios)
+
+    keys = list(set(list(d.keys()) + list(m.keys())))
+    f["key_count_v"] = float(sum(1 for k in keys if k.startswith("v_")))
+    f["key_count_i"] = float(sum(1 for k in keys if k.startswith("i_")))
+    f["key_count_supply"] = float(sum(1 for k in keys if ("vcc" in k.lower() or "vdd" in k.lower())))
+    f["key_count_out"] = float(sum(1 for k in keys if ("out" in k.lower())))
+    return f
+
+
+@dataclass
+class DebugResult:
+    """Normalized debug response returned by both runtime implementations."""
+
+    circuit_name: str
+    fault_type: str
+    confidence: float
+    diagnosis: str
+    fix: str
+    provided_node_count: int
+    required_node_count: int
+    missing_required_nodes: list[str]
+    used_voltage_measurement_keys: list[str]
+    used_current_measurement_keys: list[str]
+    top_candidates: list[dict[str, float]]
+
+    def to_dict(self) -> dict[str, Any]:
+        """Serialize the result to the API response shape."""
+        return {
+            "circuit_name": self.circuit_name,
+            "fault_type": self.fault_type,
+            "confidence": self.confidence,
+            "diagnosis": self.diagnosis,
+            "fix": self.fix,
+            "response_text": (
+                f"FaultType: {self.fault_type}\n"
+                f"Diagnosis: {self.diagnosis}. Fix: {self.fix}."
+            ),
+            "provided_node_count": self.provided_node_count,
+            "required_node_count": self.required_node_count,
+            "missing_required_nodes": self.missing_required_nodes,
+            "used_voltage_measurement_keys": self.used_voltage_measurement_keys,
+            "used_current_measurement_keys": self.used_current_measurement_keys,
+            "top_candidates": self.top_candidates,
+        }
+
+
+class CircuitDebugRuntime:
+    """Load the tabular model bundle and run circuit fault inference."""
+
+    def __init__(
+        self,
+        model_bundle_path: str | Path,
+        circuit_catalog_path: str | Path,
+        *,
+        family_pair_models_path: str | Path | None = None,
+        config_path: str | Path | None = None,
+    ) -> None:
+        """Load model artifacts, catalog metadata, and optional pairwise family models."""
+        self.model_bundle_path = Path(model_bundle_path)
+        self.circuit_catalog_path = Path(circuit_catalog_path)
+        self.family_pair_models_path = Path(family_pair_models_path) if family_pair_models_path else None
+        self.config_path = Path(config_path) if config_path else None
+
+        bundle = joblib.load(self.model_bundle_path)
+        self.vectorizer = bundle["vectorizer"]
+        self.global_model = bundle["global_model"]
+        self.pair_model = bundle["pair_model"]
+        self.report = dict(bundle.get("report") or {})
+
+        catalog_doc = json.loads(self.circuit_catalog_path.read_text(encoding="utf-8"))
+        self.catalog = catalog_doc["circuits"]
+        self.catalog_meta = {k: v for k, v in catalog_doc.items() if k != "circuits"}
+
+        self.config: dict[str, Any] = {}
+        if self.config_path and self.config_path.exists():
+            self.config = json.loads(self.config_path.read_text(encoding="utf-8"))
+
+        self.family_pair_models: dict[str, Any] = {}
+        if self.family_pair_models_path and self.family_pair_models_path.exists():
+            loaded = joblib.load(self.family_pair_models_path)
+            if isinstance(loaded, dict):
+                self.family_pair_models = loaded
+
+        self.pair_threshold = float(
+            self.config.get("pair_threshold", self.report.get("pair_threshold", 0.5))
+        )
+        raw_classes = list(self.global_model.classes_)
+        config_class_names = list(self.config.get("class_names_sorted", []) or [])
+        if raw_classes and all(isinstance(x, (int, np.integer)) for x in raw_classes) and config_class_names:
+            # XGBoost stores integer-encoded classes in the model; use saved index->label mapping from runtime config.
+            self.class_names = [str(config_class_names[int(i)]) for i in raw_classes]
+        else:
+            self.class_names = [str(x) for x in raw_classes]
+
+    def list_circuits(self) -> list[str]:
+        """Return the available circuit names in sorted order."""
+        return sorted(self.catalog.keys())
+
+    def has_circuit(self, circuit_name: str) -> bool:
+        """Check whether a circuit exists in the packaged catalog."""
+        return circuit_name in self.catalog
+
+    def circuit_spec(self, circuit_name: str) -> dict[str, Any]:
+        """Return a copy of the stored spec for one circuit."""
+        return dict(self.catalog[circuit_name])
+
+    def prewarm(self) -> None:
+        """No-op prewarm hook for the eager tabular runtime."""
+        return None
+
+    def _normalize_measurements_from_request(
+        self,
+        node_voltages: dict[str, float] | None,
+        node_measurements: dict[str, dict[str, float]] | None,
+        source_currents: dict[str, float] | None,
+        source_current_measurements: dict[str, dict[str, float]] | None,
+        measurement_overrides: dict[str, float] | None,
+        temp: float | None,
+        tnom: float | None,
+    ) -> tuple[dict[str, float], list[str], list[str]]:
+        """Convert API request payloads into the feature-keyed measurement mapping."""
+        measured: dict[str, float] = {}
+        used_v_keys: list[str] = []
+        used_i_keys: list[str] = []
+
+        _merge_measurement_map(
+            measured,
+            used_v_keys,
+            node_voltages,
+            key_builder=measurement_key_for_node,
+        )
+        _merge_stat_measurements(
+            measured,
+            used_v_keys,
+            node_measurements,
+            key_builder=measurement_key_for_node,
+        )
+
+        _merge_measurement_map(
+            measured,
+            used_i_keys,
+            source_currents,
+            key_builder=measurement_key_for_vsource_current,
+        )
+        _merge_stat_measurements(
+            measured,
+            used_i_keys,
+            source_current_measurements,
+            key_builder=measurement_key_for_vsource_current,
+        )
+
+        if measurement_overrides:
+            for key, value in measurement_overrides.items():
+                nv = _numeric(value)
+                if nv is None:
+                    continue
+                measured[str(key).lower()] = nv
+
+        measured["temp"] = float(temp) if temp is not None else 27.0
+        measured["tnom"] = float(tnom) if tnom is not None else 27.0
+        return measured, sorted(set(used_v_keys)), sorted(set(used_i_keys))
+
+    def predict_fault(
+        self,
+        *,
+        circuit_name: str,
+        node_voltages: dict[str, float] | None = None,
+        node_measurements: dict[str, dict[str, float]] | None = None,
+        source_currents: dict[str, float] | None = None,
+        source_current_measurements: dict[str, dict[str, float]] | None = None,
+        measurement_overrides: dict[str, float] | None = None,
+        temp: float | None = None,
+        tnom: float | None = None,
+        strict: bool = True,
+    ) -> DebugResult:
+        """Score one circuit against the tabular model stack and return the best diagnosis."""
+        if circuit_name not in self.catalog:
+            raise KeyError(f"Unknown circuit: {circuit_name}")
+
+        spec = self.catalog[circuit_name]
+        golden_max = dict(spec.get("golden_measurements") or spec.get("golden_measurements_max") or {})
+        measured, used_v_keys, used_i_keys = self._normalize_measurements_from_request(
+            node_voltages=node_voltages,
+            node_measurements=node_measurements,
+            source_currents=source_currents,
+            source_current_measurements=source_current_measurements,
+            measurement_overrides=measurement_overrides,
+            temp=temp,
+            tnom=tnom,
+        )
+
+        required_nodes = [item["node_name"] for item in spec.get("nodes", [])]
+        provided_nodes_norm = {str(k).upper() for k in (node_voltages or {}).keys()}
+        provided_nodes_norm.update(str(k).upper() for k in (node_measurements or {}).keys())
+        missing_required_nodes = [n for n in required_nodes if n.upper() not in provided_nodes_norm]
+        if strict and missing_required_nodes:
+            raise ValueError(
+                f"Missing required nodes for {circuit_name}: {', '.join(missing_required_nodes)}"
+            )
+
+        feats = build_feature_dict_from_measurements(
+            circuit_name=circuit_name,
+            measured=measured,
+            golden=golden_max,
+            sim_success=True,
+        )
+        X = self.vectorizer.transform([feats])
+        proba = np.asarray(self.global_model.predict_proba(X))[0]
+
+        idx_sorted = np.argsort(proba)[::-1]
+        base_idx = int(idx_sorted[0])
+        base_pred = str(self.class_names[base_idx])
+        final_pred = base_pred
+        final_conf = float(proba[base_idx])
+
+        if base_pred in PAIR_MC_PO:
+            # Resolve the ambiguous missing-component vs pin-open split with the dedicated binary model.
+            pair_prob = float(np.asarray(self.pair_model.predict_proba(X))[0, 1])  # P(pin_open)
+            fam = family_id(circuit_name)
+            fam_model = self.family_pair_models.get(fam)
+            if fam_model is not None:
+                pair_prob = float(np.asarray(fam_model.predict_proba(X))[0, 1])
+            final_pred = "pin_open" if pair_prob >= self.pair_threshold else "missing_component"
+            final_conf = pair_prob if final_pred == "pin_open" else (1.0 - pair_prob)
+
+        templ = FAULT_TEMPLATES.get(final_pred, FAULT_TEMPLATES["unknown"])
+        top_candidates = [
+            {"fault_type": str(self.class_names[int(i)]), "confidence": float(proba[int(i)])}
+            for i in idx_sorted[: min(5, len(idx_sorted))]
+        ]
+
+        return DebugResult(
+            circuit_name=circuit_name,
+            fault_type=final_pred,
+            confidence=final_conf,
+            diagnosis=templ["diagnosis"],
+            fix=templ["fix"],
+            provided_node_count=len(node_voltages or {}),
+            required_node_count=len(required_nodes),
+            missing_required_nodes=missing_required_nodes,
+            used_voltage_measurement_keys=used_v_keys,
+            used_current_measurement_keys=used_i_keys,
+            top_candidates=top_candidates,
+        )
+
+
+def build_circuit_catalog(golden_root: str | Path) -> dict[str, Any]:
+    """Build the circuit catalog by scanning packaged golden measurement files."""
+    root = Path(golden_root)
+    circuits: dict[str, Any] = {}
+
+    for lab_dir in sorted(root.iterdir()):
+        if not lab_dir.is_dir():
+            continue
+        if lab_dir.name.startswith("merged_"):
+            continue
+        golden_path = lab_dir / "golden" / "golden_measurements.json"
+        if not golden_path.exists():
+            continue
+
+        measurements = json.loads(golden_path.read_text(encoding="utf-8"))
+        golden_all: dict[str, float] = {}
+        golden_max: dict[str, float] = {}
+        node_map: dict[str, dict[str, Any]] = {}
+        source_current_map: dict[str, dict[str, Any]] = {}
+
+        for key, value in measurements.items():
+            low = str(key).lower()
+            nv = _numeric(value)
+            if low in {"temp", "tnom"} and nv is not None:
+                golden_all[low] = nv
+                golden_max[low] = nv
+            if nv is None:
+                continue
+            if low.startswith("v_"):
+                stat = measurement_stat_from_key(low)
+                if stat is None:
+                    continue
+                golden_all[low] = nv
+                if stat == "max":
+                    golden_max[low] = nv
+                node_name = best_effort_display_from_voltage_key(low)
+                entry = node_map.setdefault(
+                    node_name,
+                    {
+                        "node_name": node_name,
+                        "measurement_key": measurement_key_for_node(node_name, "max"),
+                        "golden_value": None,
+                        "measurement_keys": {},
+                        "golden_values": {},
+                        "available_stats": [],
+                    },
+                )
+                entry["measurement_keys"][stat] = low
+                entry["golden_values"][stat] = nv
+                entry["available_stats"] = sorted(
+                    set(entry["available_stats"]) | {stat},
+                    key=lambda s: MEASUREMENT_STATS.index(s) if s in MEASUREMENT_STATS else 99,
+                )
+                if stat == "max":
+                    entry["measurement_key"] = low
+                    entry["golden_value"] = nv
+            elif low.startswith("i_"):
+                stat = measurement_stat_from_key(low)
+                if stat is None:
+                    continue
+                golden_all[low] = nv
+                if stat == "max":
+                    golden_max[low] = nv
+                if not is_student_visible_current_key(low):
+                    continue
+                source_name = best_effort_display_from_current_key(low)
+                entry = source_current_map.setdefault(
+                    source_name,
+                    {
+                        "source_name": source_name,
+                        "measurement_key": measurement_key_for_vsource_current(source_name, "max"),
+                        "golden_value": None,
+                        "measurement_keys": {},
+                        "golden_values": {},
+                        "available_stats": [],
+                    },
+                )
+                entry["measurement_keys"][stat] = low
+                entry["golden_values"][stat] = nv
+                entry["available_stats"] = sorted(
+                    set(entry["available_stats"]) | {stat},
+                    key=lambda s: MEASUREMENT_STATS.index(s) if s in MEASUREMENT_STATS else 99,
+                )
+                if stat == "max":
+                    entry["measurement_key"] = low
+                    entry["golden_value"] = nv
+
+        nodes = sorted(node_map.values(), key=_measurement_entry_sort_key)
+        source_currents = sorted(source_current_map.values(), key=_measurement_entry_sort_key)
+
+        for entry in nodes + source_currents:
+            student_available_stats, student_stats_collapsed, student_primary_stat = _student_stat_policy(entry)
+            entry["student_available_stats"] = student_available_stats
+            entry["student_stats_collapsed"] = bool(student_stats_collapsed)
+            entry["student_primary_stat"] = student_primary_stat
+
+        circuits[lab_dir.name] = {
+            "circuit_name": lab_dir.name,
+            "nodes": nodes,
+            "source_currents": source_currents,
+            "golden_measurements": golden_all,
+            "golden_measurements_max": golden_max,
+            "golden_defaults": {
+                "solver": measurements.get("solver", "Normal"),
+                "method": measurements.get("method", "trap"),
+                "temp": measurements.get("temp", 27.0),
+                "tnom": measurements.get("tnom", 27.0),
+            },
+            "paths": {
+                "golden_measurements": str(golden_path).replace("/", "\\"),
+                "lab_dir": str(lab_dir).replace("/", "\\"),
+            },
+        }
+
+    return {
+        "catalog_version": 2,
+        "golden_root": str(root).replace("/", "\\"),
+        "circuit_count": len(circuits),
+        "circuits": circuits,
+    }

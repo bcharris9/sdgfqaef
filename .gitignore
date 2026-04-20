@@ -1,0 +1,43 @@
+# Python virtual environments
+.venv/
+.venv*/
+venv/
+venv*/
+env/
+env*/
+ENV/
+ENV*/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+
+# Generated pipeline outputs
+pipeline/out/
+pipeline/out_one_lab/
+pipeline/out_one_lab_all*/
+pipeline/tmp_*/
+pipeline/*.log
+
+# Historical snapshots / isolated copies
+cleanup_archive_*/
+ltspice_llm_pipeline_vnext_20260303/
+
+# Packaged runtime artifacts that are too large for the clean source repo
+circuit_debug_api/artifacts/
+circuit_debug_api/assets_hybrid/
+circuit_debug_api/_backend_logs/
+circuit_debug_api/_smoke_logs/
+circuit_debug_api/.env*.local
+circuit_debug_api/*.pid
+circuit_debug_api/*.log
+
+# Local validation and smoke-test outputs
+_tmp_ltspice_validate/
+_tmp_ltspice_validate_py/
+_tmp_one_lab_smoke2/

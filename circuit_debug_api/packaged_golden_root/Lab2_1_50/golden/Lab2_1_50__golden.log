@@ -1,0 +1,29 @@
+LTspice 26.0.1 for Windows
+Circuit: C:\ft\ltspice_llm_pipeline_vnext_20260303\pipeline\out_all_labs_rich_v1_train\Lab2_1_50\golden\Lab2_1_50__golden.cir
+Start Time: Thu Mar 26 18:06:07 2026
+solver = Normal
+Maximum thread count: 24
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.021 seconds.
+
+Files loaded:
+C:\ft\ltspice_llm_pipeline_vnext_20260303\pipeline\out_all_labs_rich_v1_train\Lab2_1_50\golden\Lab2_1_50__golden.cir
+
+v_n001_max: MAX(V(N001))=1.5 FROM 0 TO 0.01
+v_n001_min: MIN(V(N001))=1.5 FROM 0 TO 0.01
+v_n001_rms: RMS(V(N001))=1.5 FROM 0 TO 0.01
+v_n001_avg: AVG(V(N001))=1.5 FROM 0 TO 0.01
+v_n001_pp: PP(V(N001))=0 FROM 0 TO 0.01
+i_r2_max: MAX(I(R2))=-0.0299999993294 FROM 0 TO 0.01
+i_r2_min: MIN(I(R2))=-0.0299999993294 FROM 0 TO 0.01
+i_r2_rms: RMS(I(R2))=0.0299999993294 FROM 0 TO 0.01
+i_r2_avg: AVG(I(R2))=-0.0299999993295 FROM 0 TO 0.01
+i_r2_pp: PP(I(R2))=0 FROM 0 TO 0.01
+i_v1_max: MAX(I(V1))=-0.0299999993294 FROM 0 TO 0.01
+i_v1_min: MIN(I(V1))=-0.0299999993294 FROM 0 TO 0.01
+i_v1_rms: RMS(I(V1))=0.0299999993294 FROM 0 TO 0.01
+i_v1_avg: AVG(I(V1))=-0.0299999993295 FROM 0 TO 0.01
+i_v1_pp: PP(I(V1))=0 FROM 0 TO 0.01

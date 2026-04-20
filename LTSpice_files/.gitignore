@@ -1,0 +1,13 @@
+# LTspice-generated simulation artifacts
+*.raw
+*.op.raw
+*.log
+*.fft
+*.net
+*.tmp
+*.bak
+*.db
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db

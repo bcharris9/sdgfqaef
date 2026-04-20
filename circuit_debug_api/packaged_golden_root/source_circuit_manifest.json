@@ -1,0 +1,617 @@
+{
+  "count": 102,
+  "circuits": [
+    {
+      "lab": "Lab1_1_0",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_1_0.asc",
+      "asc_relpath": "Lab1\\Lab1_1_0.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_1_100",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_1_100.asc",
+      "asc_relpath": "Lab1\\Lab1_1_100.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_1_1000",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_1_1000.asc",
+      "asc_relpath": "Lab1\\Lab1_1_1000.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_1_10000",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_1_10000.asc",
+      "asc_relpath": "Lab1\\Lab1_1_10000.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_1_100000",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_1_100000.asc",
+      "asc_relpath": "Lab1\\Lab1_1_100000.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_2A_2_0",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_2A_2_0.asc",
+      "asc_relpath": "Lab1\\Lab1_2A_2_0.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_2A_2_100",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_2A_2_100.asc",
+      "asc_relpath": "Lab1\\Lab1_2A_2_100.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_2A_2_1000",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_2A_2_1000.asc",
+      "asc_relpath": "Lab1\\Lab1_2A_2_1000.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_2A_2_10000",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_2A_2_10000.asc",
+      "asc_relpath": "Lab1\\Lab1_2A_2_10000.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_2A_2_100000",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_2A_2_100000.asc",
+      "asc_relpath": "Lab1\\Lab1_2A_2_100000.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_2A_5_0",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_2A_5_0.asc",
+      "asc_relpath": "Lab1\\Lab1_2A_5_0.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_2A_5_100",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_2A_5_100.asc",
+      "asc_relpath": "Lab1\\Lab1_2A_5_100.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_2A_5_1000",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_2A_5_1000.asc",
+      "asc_relpath": "Lab1\\Lab1_2A_5_1000.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_2A_5_10000",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_2A_5_10000.asc",
+      "asc_relpath": "Lab1\\Lab1_2A_5_10000.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_2A_5_100000",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_2A_5_100000.asc",
+      "asc_relpath": "Lab1\\Lab1_2A_5_100000.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_2B_2_0",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_2B_2_0.asc",
+      "asc_relpath": "Lab1\\Lab1_2B_2_0.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_2B_2_100",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_2B_2_100.asc",
+      "asc_relpath": "Lab1\\Lab1_2B_2_100.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_2B_2_1000",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_2B_2_1000.asc",
+      "asc_relpath": "Lab1\\Lab1_2B_2_1000.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_2B_2_10000",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_2B_2_10000.asc",
+      "asc_relpath": "Lab1\\Lab1_2B_2_10000.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_2B_2_100000",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_2B_2_100000.asc",
+      "asc_relpath": "Lab1\\Lab1_2B_2_100000.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_2B_5_0",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_2B_5_0.asc",
+      "asc_relpath": "Lab1\\Lab1_2B_5_0.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_2B_5_100",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_2B_5_100.asc",
+      "asc_relpath": "Lab1\\Lab1_2B_5_100.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_2B_5_1000",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_2B_5_1000.asc",
+      "asc_relpath": "Lab1\\Lab1_2B_5_1000.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_2B_5_10000",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_2B_5_10000.asc",
+      "asc_relpath": "Lab1\\Lab1_2B_5_10000.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab1_2B_5_100000",
+      "asc_path": "LTSpice_files\\Lab1\\Lab1_2B_5_100000.asc",
+      "asc_relpath": "Lab1\\Lab1_2B_5_100000.asc",
+      "asc_parent": "LTSpice_files\\Lab1"
+    },
+    {
+      "lab": "Lab2_1_0",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_1_0.asc",
+      "asc_relpath": "Lab2\\Lab2_1_0.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_1_100",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_1_100.asc",
+      "asc_relpath": "Lab2\\Lab2_1_100.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_1_1000",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_1_1000.asc",
+      "asc_relpath": "Lab2\\Lab2_1_1000.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_1_200",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_1_200.asc",
+      "asc_relpath": "Lab2\\Lab2_1_200.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_1_2000",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_1_2000.asc",
+      "asc_relpath": "Lab2\\Lab2_1_2000.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_1_333",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_1_333.asc",
+      "asc_relpath": "Lab2\\Lab2_1_333.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_1_50",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_1_50.asc",
+      "asc_relpath": "Lab2\\Lab2_1_50.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_1_500",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_1_500.asc",
+      "asc_relpath": "Lab2\\Lab2_1_500.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_2A_0",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_2A_0.asc",
+      "asc_relpath": "Lab2\\Lab2_2A_0.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_2A_100",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_2A_100.asc",
+      "asc_relpath": "Lab2\\Lab2_2A_100.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_2A_1000",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_2A_1000.asc",
+      "asc_relpath": "Lab2\\Lab2_2A_1000.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_2A_200",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_2A_200.asc",
+      "asc_relpath": "Lab2\\Lab2_2A_200.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_2A_2000",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_2A_2000.asc",
+      "asc_relpath": "Lab2\\Lab2_2A_2000.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_2A_333",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_2A_333.asc",
+      "asc_relpath": "Lab2\\Lab2_2A_333.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_2A_50",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_2A_50.asc",
+      "asc_relpath": "Lab2\\Lab2_2A_50.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_2A_500",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_2A_500.asc",
+      "asc_relpath": "Lab2\\Lab2_2A_500.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_2B_0",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_2B_0.asc",
+      "asc_relpath": "Lab2\\Lab2_2B_0.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_2B_100",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_2B_100.asc",
+      "asc_relpath": "Lab2\\Lab2_2B_100.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_2B_1000",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_2B_1000.asc",
+      "asc_relpath": "Lab2\\Lab2_2B_1000.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_2B_200",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_2B_200.asc",
+      "asc_relpath": "Lab2\\Lab2_2B_200.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_2B_2000",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_2B_2000.asc",
+      "asc_relpath": "Lab2\\Lab2_2B_2000.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_2B_333",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_2B_333.asc",
+      "asc_relpath": "Lab2\\Lab2_2B_333.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_2B_50",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_2B_50.asc",
+      "asc_relpath": "Lab2\\Lab2_2B_50.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab2_2B_500",
+      "asc_path": "LTSpice_files\\Lab2\\Lab2_2B_500.asc",
+      "asc_relpath": "Lab2\\Lab2_2B_500.asc",
+      "asc_parent": "LTSpice_files\\Lab2"
+    },
+    {
+      "lab": "Lab3_1",
+      "asc_path": "LTSpice_files\\Lab3\\Lab3_1.asc",
+      "asc_relpath": "Lab3\\Lab3_1.asc",
+      "asc_parent": "LTSpice_files\\Lab3"
+    },
+    {
+      "lab": "Lab3_1_V1_only",
+      "asc_path": "LTSpice_files\\Lab3\\Lab3_1_V1_only.asc",
+      "asc_relpath": "Lab3\\Lab3_1_V1_only.asc",
+      "asc_parent": "LTSpice_files\\Lab3"
+    },
+    {
+      "lab": "Lab3_1_V2_only",
+      "asc_path": "LTSpice_files\\Lab3\\Lab3_1_V2_only.asc",
+      "asc_relpath": "Lab3\\Lab3_1_V2_only.asc",
+      "asc_parent": "LTSpice_files\\Lab3"
+    },
+    {
+      "lab": "Lab3_2",
+      "asc_path": "LTSpice_files\\Lab3\\Lab3_2.asc",
+      "asc_relpath": "Lab3\\Lab3_2.asc",
+      "asc_parent": "LTSpice_files\\Lab3"
+    },
+    {
+      "lab": "Lab3_2_V1_only",
+      "asc_path": "LTSpice_files\\Lab3\\Lab3_2_V1_only.asc",
+      "asc_relpath": "Lab3\\Lab3_2_V1_only.asc",
+      "asc_parent": "LTSpice_files\\Lab3"
+    },
+    {
+      "lab": "Lab3_2_V2_only",
+      "asc_path": "LTSpice_files\\Lab3\\Lab3_2_V2_only.asc",
+      "asc_relpath": "Lab3\\Lab3_2_V2_only.asc",
+      "asc_parent": "LTSpice_files\\Lab3"
+    },
+    {
+      "lab": "lab4_task1_part1_100",
+      "asc_path": "LTSpice_files\\Lab4\\Task 1 Part 1\\lab4_task1_part1_100.asc",
+      "asc_relpath": "Lab4\\Task 1 Part 1\\lab4_task1_part1_100.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 1 Part 1"
+    },
+    {
+      "lab": "lab4_task1_part1_1000",
+      "asc_path": "LTSpice_files\\Lab4\\Task 1 Part 1\\lab4_task1_part1_1000.asc",
+      "asc_relpath": "Lab4\\Task 1 Part 1\\lab4_task1_part1_1000.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 1 Part 1"
+    },
+    {
+      "lab": "lab4_task1_part1_200",
+      "asc_path": "LTSpice_files\\Lab4\\Task 1 Part 1\\lab4_task1_part1_200.asc",
+      "asc_relpath": "Lab4\\Task 1 Part 1\\lab4_task1_part1_200.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 1 Part 1"
+    },
+    {
+      "lab": "lab4_task1_part1_300",
+      "asc_path": "LTSpice_files\\Lab4\\Task 1 Part 1\\lab4_task1_part1_300.asc",
+      "asc_relpath": "Lab4\\Task 1 Part 1\\lab4_task1_part1_300.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 1 Part 1"
+    },
+    {
+      "lab": "lab4_task1_part1_500",
+      "asc_path": "LTSpice_files\\Lab4\\Task 1 Part 1\\lab4_task1_part1_500.asc",
+      "asc_relpath": "Lab4\\Task 1 Part 1\\lab4_task1_part1_500.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 1 Part 1"
+    },
+    {
+      "lab": "lab4_task1_part2_1000",
+      "asc_path": "LTSpice_files\\Lab4\\Task 1 Part 2\\lab4_task1_part2_1000.asc",
+      "asc_relpath": "Lab4\\Task 1 Part 2\\lab4_task1_part2_1000.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 1 Part 2"
+    },
+    {
+      "lab": "lab4_task1_part2_10000",
+      "asc_path": "LTSpice_files\\Lab4\\Task 1 Part 2\\lab4_task1_part2_10000.asc",
+      "asc_relpath": "Lab4\\Task 1 Part 2\\lab4_task1_part2_10000.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 1 Part 2"
+    },
+    {
+      "lab": "lab4_task1_part2_100000",
+      "asc_path": "LTSpice_files\\Lab4\\Task 1 Part 2\\lab4_task1_part2_100000.asc",
+      "asc_relpath": "Lab4\\Task 1 Part 2\\lab4_task1_part2_100000.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 1 Part 2"
+    },
+    {
+      "lab": "lab4_task1_part2_1500",
+      "asc_path": "LTSpice_files\\Lab4\\Task 1 Part 2\\lab4_task1_part2_1500.asc",
+      "asc_relpath": "Lab4\\Task 1 Part 2\\lab4_task1_part2_1500.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 1 Part 2"
+    },
+    {
+      "lab": "lab4_task1_part2_2000",
+      "asc_path": "LTSpice_files\\Lab4\\Task 1 Part 2\\lab4_task1_part2_2000.asc",
+      "asc_relpath": "Lab4\\Task 1 Part 2\\lab4_task1_part2_2000.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 1 Part 2"
+    },
+    {
+      "lab": "lab4_task1_part2_3300",
+      "asc_path": "LTSpice_files\\Lab4\\Task 1 Part 2\\lab4_task1_part2_3300.asc",
+      "asc_relpath": "Lab4\\Task 1 Part 2\\lab4_task1_part2_3300.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 1 Part 2"
+    },
+    {
+      "lab": "lab4_task1_part3_1000",
+      "asc_path": "LTSpice_files\\Lab4\\Task 1 Part 3\\lab4_task1_part3_1000.asc",
+      "asc_relpath": "Lab4\\Task 1 Part 3\\lab4_task1_part3_1000.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 1 Part 3"
+    },
+    {
+      "lab": "lab4_task1_part3_10000",
+      "asc_path": "LTSpice_files\\Lab4\\Task 1 Part 3\\lab4_task1_part3_10000.asc",
+      "asc_relpath": "Lab4\\Task 1 Part 3\\lab4_task1_part3_10000.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 1 Part 3"
+    },
+    {
+      "lab": "lab4_task1_part3_100000",
+      "asc_path": "LTSpice_files\\Lab4\\Task 1 Part 3\\lab4_task1_part3_100000.asc",
+      "asc_relpath": "Lab4\\Task 1 Part 3\\lab4_task1_part3_100000.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 1 Part 3"
+    },
+    {
+      "lab": "lab4_task1_part3_1500",
+      "asc_path": "LTSpice_files\\Lab4\\Task 1 Part 3\\lab4_task1_part3_1500.asc",
+      "asc_relpath": "Lab4\\Task 1 Part 3\\lab4_task1_part3_1500.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 1 Part 3"
+    },
+    {
+      "lab": "lab4_task1_part3_2000",
+      "asc_path": "LTSpice_files\\Lab4\\Task 1 Part 3\\lab4_task1_part3_2000.asc",
+      "asc_relpath": "Lab4\\Task 1 Part 3\\lab4_task1_part3_2000.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 1 Part 3"
+    },
+    {
+      "lab": "lab4_task1_part3_3300",
+      "asc_path": "LTSpice_files\\Lab4\\Task 1 Part 3\\lab4_task1_part3_3300.asc",
+      "asc_relpath": "Lab4\\Task 1 Part 3\\lab4_task1_part3_3300.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 1 Part 3"
+    },
+    {
+      "lab": "lab4_task2_part1_-1",
+      "asc_path": "LTSpice_files\\Lab4\\Task 2 Part 1\\lab4_task2_part1_-1.asc",
+      "asc_relpath": "Lab4\\Task 2 Part 1\\lab4_task2_part1_-1.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 2 Part 1"
+    },
+    {
+      "lab": "lab4_task2_part1_-2",
+      "asc_path": "LTSpice_files\\Lab4\\Task 2 Part 1\\lab4_task2_part1_-2.asc",
+      "asc_relpath": "Lab4\\Task 2 Part 1\\lab4_task2_part1_-2.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 2 Part 1"
+    },
+    {
+      "lab": "lab4_task2_part1_-3",
+      "asc_path": "LTSpice_files\\Lab4\\Task 2 Part 1\\lab4_task2_part1_-3.asc",
+      "asc_relpath": "Lab4\\Task 2 Part 1\\lab4_task2_part1_-3.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 2 Part 1"
+    },
+    {
+      "lab": "lab4_task2_part1_-4",
+      "asc_path": "LTSpice_files\\Lab4\\Task 2 Part 1\\lab4_task2_part1_-4.asc",
+      "asc_relpath": "Lab4\\Task 2 Part 1\\lab4_task2_part1_-4.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 2 Part 1"
+    },
+    {
+      "lab": "lab4_task2_part1_-5",
+      "asc_path": "LTSpice_files\\Lab4\\Task 2 Part 1\\lab4_task2_part1_-5.asc",
+      "asc_relpath": "Lab4\\Task 2 Part 1\\lab4_task2_part1_-5.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 2 Part 1"
+    },
+    {
+      "lab": "lab4_task2_part1_1",
+      "asc_path": "LTSpice_files\\Lab4\\Task 2 Part 1\\lab4_task2_part1_1.asc",
+      "asc_relpath": "Lab4\\Task 2 Part 1\\lab4_task2_part1_1.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 2 Part 1"
+    },
+    {
+      "lab": "lab4_task2_part1_2",
+      "asc_path": "LTSpice_files\\Lab4\\Task 2 Part 1\\lab4_task2_part1_2.asc",
+      "asc_relpath": "Lab4\\Task 2 Part 1\\lab4_task2_part1_2.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 2 Part 1"
+    },
+    {
+      "lab": "lab4_task2_part1_3",
+      "asc_path": "LTSpice_files\\Lab4\\Task 2 Part 1\\lab4_task2_part1_3.asc",
+      "asc_relpath": "Lab4\\Task 2 Part 1\\lab4_task2_part1_3.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 2 Part 1"
+    },
+    {
+      "lab": "lab4_task2_part1_4",
+      "asc_path": "LTSpice_files\\Lab4\\Task 2 Part 1\\lab4_task2_part1_4.asc",
+      "asc_relpath": "Lab4\\Task 2 Part 1\\lab4_task2_part1_4.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 2 Part 1"
+    },
+    {
+      "lab": "lab4_task2_part1_5",
+      "asc_path": "LTSpice_files\\Lab4\\Task 2 Part 1\\lab4_task2_part1_5.asc",
+      "asc_relpath": "Lab4\\Task 2 Part 1\\lab4_task2_part1_5.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 2 Part 1"
+    },
+    {
+      "lab": "lab4_task2_part2_1",
+      "asc_path": "LTSpice_files\\Lab4\\Task 2 Part 2\\lab4_task2_part2_1.asc",
+      "asc_relpath": "Lab4\\Task 2 Part 2\\lab4_task2_part2_1.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 2 Part 2"
+    },
+    {
+      "lab": "lab4_task2_part2_2",
+      "asc_path": "LTSpice_files\\Lab4\\Task 2 Part 2\\lab4_task2_part2_2.asc",
+      "asc_relpath": "Lab4\\Task 2 Part 2\\lab4_task2_part2_2.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 2 Part 2"
+    },
+    {
+      "lab": "lab4_task2_part2_3",
+      "asc_path": "LTSpice_files\\Lab4\\Task 2 Part 2\\lab4_task2_part2_3.asc",
+      "asc_relpath": "Lab4\\Task 2 Part 2\\lab4_task2_part2_3.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 2 Part 2"
+    },
+    {
+      "lab": "lab4_task2_part2_4",
+      "asc_path": "LTSpice_files\\Lab4\\Task 2 Part 2\\lab4_task2_part2_4.asc",
+      "asc_relpath": "Lab4\\Task 2 Part 2\\lab4_task2_part2_4.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 2 Part 2"
+    },
+    {
+      "lab": "lab4_task2_part2_5",
+      "asc_path": "LTSpice_files\\Lab4\\Task 2 Part 2\\lab4_task2_part2_5.asc",
+      "asc_relpath": "Lab4\\Task 2 Part 2\\lab4_task2_part2_5.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 2 Part 2"
+    },
+    {
+      "lab": "lab4_task3_1",
+      "asc_path": "LTSpice_files\\Lab4\\Task 3\\lab4_task3_1.asc",
+      "asc_relpath": "Lab4\\Task 3\\lab4_task3_1.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 3"
+    },
+    {
+      "lab": "lab4_task3_2",
+      "asc_path": "LTSpice_files\\Lab4\\Task 3\\lab4_task3_2.asc",
+      "asc_relpath": "Lab4\\Task 3\\lab4_task3_2.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 3"
+    },
+    {
+      "lab": "lab4_task3_3",
+      "asc_path": "LTSpice_files\\Lab4\\Task 3\\lab4_task3_3.asc",
+      "asc_relpath": "Lab4\\Task 3\\lab4_task3_3.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 3"
+    },
+    {
+      "lab": "lab4_task3_4",
+      "asc_path": "LTSpice_files\\Lab4\\Task 3\\lab4_task3_4.asc",
+      "asc_relpath": "Lab4\\Task 3\\lab4_task3_4.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 3"
+    },
+    {
+      "lab": "lab4_task3_5",
+      "asc_path": "LTSpice_files\\Lab4\\Task 3\\lab4_task3_5.asc",
+      "asc_relpath": "Lab4\\Task 3\\lab4_task3_5.asc",
+      "asc_parent": "LTSpice_files\\Lab4\\Task 3"
+    },
+    {
+      "lab": "Lab5_1",
+      "asc_path": "LTSpice_files\\Lab5\\Lab5_1.asc",
+      "asc_relpath": "Lab5\\Lab5_1.asc",
+      "asc_parent": "LTSpice_files\\Lab5"
+    },
+    {
+      "lab": "Lab6_1",
+      "asc_path": "LTSpice_files\\Lab6\\Lab6_1.asc",
+      "asc_relpath": "Lab6\\Lab6_1.asc",
+      "asc_parent": "LTSpice_files\\Lab6"
+    },
+    {
+      "lab": "Lab7_1",
+      "asc_path": "LTSpice_files\\Lab7\\Lab7_1.asc",
+      "asc_relpath": "Lab7\\Lab7_1.asc",
+      "asc_parent": "LTSpice_files\\Lab7"
+    },
+    {
+      "lab": "Lab8_CD",
+      "asc_path": "LTSpice_files\\Lab8\\Lab8_CD.asc",
+      "asc_relpath": "Lab8\\Lab8_CD.asc",
+      "asc_parent": "LTSpice_files\\Lab8"
+    },
+    {
+      "lab": "Lab8_OD",
+      "asc_path": "LTSpice_files\\Lab8\\Lab8_OD.asc",
+      "asc_relpath": "Lab8\\Lab8_OD.asc",
+      "asc_parent": "LTSpice_files\\Lab8"
+    },
+    {
+      "lab": "Lab8_SOD",
+      "asc_path": "LTSpice_files\\Lab8\\Lab8_SOD.asc",
+      "asc_relpath": "Lab8\\Lab8_SOD.asc",
+      "asc_parent": "LTSpice_files\\Lab8"
+    },
+    {
+      "lab": "Lab8_SUD",
+      "asc_path": "LTSpice_files\\Lab8\\Lab8_SUD.asc",
+      "asc_relpath": "Lab8\\Lab8_SUD.asc",
+      "asc_parent": "LTSpice_files\\Lab8"
+    },
+    {
+      "lab": "Lab8_UD",
+      "asc_path": "LTSpice_files\\Lab8\\Lab8_UD.asc",
+      "asc_relpath": "Lab8\\Lab8_UD.asc",
+      "asc_parent": "LTSpice_files\\Lab8"
+    },
+    {
+      "lab": "Lab9_1",
+      "asc_path": "LTSpice_files\\Lab9\\Lab9_1.asc",
+      "asc_relpath": "Lab9\\Lab9_1.asc",
+      "asc_parent": "LTSpice_files\\Lab9"
+    },
+    {
+      "lab": "Lab9_2",
+      "asc_path": "LTSpice_files\\Lab9\\Lab9_2.asc",
+      "asc_relpath": "Lab9\\Lab9_2.asc",
+      "asc_parent": "LTSpice_files\\Lab9"
+    }
+  ]
+}
