@@ -17,7 +17,7 @@ from langchain_ollama import OllamaEmbeddings
 import embed
 
 FALLBACK_ANSWER = "I cannot find that information in the lab manual."
-DEFAULT_BASE_URL = "http://127.0.0.1:8000"
+DEFAULT_BASE_URL = "http://127.0.0.1:8001"
 TOKEN_PATTERN = re.compile(r"[a-z][a-z0-9]{2,}|\d+[a-z]?", re.IGNORECASE)
 TASK_PATTERN = re.compile(r"task\s*(\d+)", re.IGNORECASE)
 REFERENCE_PATTERN = re.compile(

@@ -97,7 +97,7 @@ Force a specific adapter (disable auto-pick):
 ## Run the API
 
 ```powershell
-.\\.venv312\\Scripts\\python.exe -m uvicorn server:app --host 127.0.0.1 --port 8000
+.\\.venv312\\Scripts\\python.exe -m uvicorn server:app --host 127.0.0.1 --port 8001
 ```
 
 If you start `server.py` directly in one process while `/chat` uses a local Ollama or
@@ -341,7 +341,7 @@ Skip this step if `./assets_hybrid/hybrid_config.json` already exists. In lean s
 Run the API:
 
 ```bash
-python -m uvicorn server:app --host 127.0.0.1 --port 8000
+python -m uvicorn server:app --host 127.0.0.1 --port 8001
 ```
 
 Example client:
@@ -359,20 +359,20 @@ python ./student_interactive_client.py
 Interactive chat client:
 
 ```bash
-python ./chat_terminal_client.py --base-url http://127.0.0.1:8000
+python ./chat_terminal_client.py --base-url http://127.0.0.1:8001
 ```
 
 Query endpoints from Bash:
 
 ```bash
-curl -s http://127.0.0.1:8000/circuits | jq
-curl -s http://127.0.0.1:8000/circuits/Lab9_2/nodes | jq
+curl -s http://127.0.0.1:8001/circuits | jq
+curl -s http://127.0.0.1:8001/circuits/Lab9_2/nodes | jq
 ```
 
 Submit a JSON payload from Bash:
 
 ```bash
-curl -s http://127.0.0.1:8000/debug \
+curl -s http://127.0.0.1:8001/debug \
   -H 'Content-Type: application/json' \
   --data @./student_lab9_2_payload.json | jq
 ```
@@ -412,14 +412,14 @@ Optional flags:
 This client lets a student type a question in the terminal and prints the chat answer. In interactive mode it prompts for an optional lab number once; if you skip it, the server will infer or auto-select the lab.
 
 ```powershell
-.\\.venv312\\Scripts\\python.exe .\\chat_terminal_client.py --base-url http://127.0.0.1:8000
+.\\.venv312\\Scripts\\python.exe .\\chat_terminal_client.py --base-url http://127.0.0.1:8001
 ```
 
 Optional one-shot question:
 
 ```powershell
 .\\.venv312\\Scripts\\python.exe .\\chat_terminal_client.py `
-  --base-url http://127.0.0.1:8000 `
+  --base-url http://127.0.0.1:8001 `
   --lab-number 1 `
   --question "What does Lab 1 procedure require?"
 ```
@@ -431,14 +431,14 @@ Exit commands in interactive mode: `/quit`, `/exit`.
 Run the chat endpoint smoke test:
 
 ```powershell
-.\\.venv312\\Scripts\\python.exe .\\test_chat_endpoint.py --base-url http://127.0.0.1:8000
+.\\.venv312\\Scripts\\python.exe .\\test_chat_endpoint.py --base-url http://127.0.0.1:8001
 ```
 
 Strict mode (require valid-question call to return `200` with `answer`):
 
 ```powershell
 .\\.venv312\\Scripts\\python.exe .\\test_chat_endpoint.py `
-  --base-url http://127.0.0.1:8000 `
+  --base-url http://127.0.0.1:8001 `
   --require-answer
 ```
 
@@ -510,13 +510,13 @@ This is the intended real use path when a student has breadboard measurements.
 ### 1) Start the API
 
 ```powershell
-.\\.venv312\\Scripts\\python.exe -m uvicorn server:app --host 127.0.0.1 --port 8000
+.\\.venv312\\Scripts\\python.exe -m uvicorn server:app --host 127.0.0.1 --port 8001
 ```
 
 ### 2) Get the valid circuit names (pick the golden circuit the student is building)
 
 ```powershell
-Invoke-RestMethod -Uri http://127.0.0.1:8000/circuits | ConvertTo-Json -Depth 5
+Invoke-RestMethod -Uri http://127.0.0.1:8001/circuits | ConvertTo-Json -Depth 5
 ```
 
 ### 3) Get the exact node names required for that circuit
@@ -524,7 +524,7 @@ Invoke-RestMethod -Uri http://127.0.0.1:8000/circuits | ConvertTo-Json -Depth 5
 Example for `Lab9_2`:
 
 ```powershell
-Invoke-RestMethod -Uri http://127.0.0.1:8000/circuits/Lab9_2/nodes | ConvertTo-Json -Depth 10
+Invoke-RestMethod -Uri http://127.0.0.1:8001/circuits/Lab9_2/nodes | ConvertTo-Json -Depth 10
 ```
 
 Use the returned `nodes[].node_name` list as the measurement checklist.
@@ -586,7 +586,7 @@ Or directly with PowerShell:
 
 ```powershell
 $body = Get-Content .\\student_lab9_2_payload.json -Raw
-Invoke-RestMethod -Uri http://127.0.0.1:8000/debug -Method Post -ContentType 'application/json' -Body $body | ConvertTo-Json -Depth 10
+Invoke-RestMethod -Uri http://127.0.0.1:8001/debug -Method Post -ContentType 'application/json' -Body $body | ConvertTo-Json -Depth 10
 ```
 
 ### 7) Read the response
@@ -610,7 +610,7 @@ Notes:
 To force a fresh best-model selection and reload after new training/eval artifacts are produced:
 
 ```powershell
-Invoke-RestMethod -Uri http://127.0.0.1:8000/admin/refresh-model -Method Post | ConvertTo-Json -Depth 12
+Invoke-RestMethod -Uri http://127.0.0.1:8001/admin/refresh-model -Method Post | ConvertTo-Json -Depth 12
 ```
 
 Or restart with refresh enabled:

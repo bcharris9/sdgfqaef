@@ -10,7 +10,7 @@ def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(
         description="Interactive terminal client for POST /chat/{lab_number}."
     )
-    p.add_argument("--base-url", default="http://127.0.0.1:8000")
+    p.add_argument("--base-url", default="http://127.0.0.1:8001")
     p.add_argument(
         "--lab-number",
         type=int,

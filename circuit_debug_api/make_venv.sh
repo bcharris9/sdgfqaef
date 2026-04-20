@@ -50,5 +50,5 @@ Activate it with:
   source "$VENV_DIR/bin/activate"
 
 Or run commands directly, for example:
-  "$VENV_DIR/bin/python" -m uvicorn server:app --host 127.0.0.1 --port 8000
+  "$VENV_DIR/bin/python" -m uvicorn server:app --host 127.0.0.1 --port 8001
 EOF

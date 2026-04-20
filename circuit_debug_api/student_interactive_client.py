@@ -20,7 +20,7 @@ def parse_args() -> argparse.Namespace:
             "Fetches required nodes for a circuit and prompts for measurements one at a time."
         )
     )
-    p.add_argument("--base-url", default="http://127.0.0.1:8000")
+    p.add_argument("--base-url", default="http://127.0.0.1:8001")
     p.add_argument("--circuit", default=None, help="Optional exact circuit name to skip circuit selection.")
     p.add_argument(
         "--ask-source-currents",

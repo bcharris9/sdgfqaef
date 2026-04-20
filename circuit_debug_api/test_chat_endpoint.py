@@ -3,7 +3,7 @@
 
 Examples:
   python test_chat_endpoint.py
-  python test_chat_endpoint.py --base-url http://127.0.0.1:8000
+  python test_chat_endpoint.py --base-url http://127.0.0.1:8001
   python test_chat_endpoint.py --require-answer
 """
 
@@ -56,7 +56,7 @@ def get_json(url: str, timeout: int = 10) -> tuple[int, Any]:
 def main() -> int:
     """Run a small contract test against the live `/chat` endpoint."""
     parser = argparse.ArgumentParser(description="Test /chat endpoint behavior on server.py")
-    parser.add_argument("--base-url", default="http://127.0.0.1:8000", help="Base URL where server.py is running.")
+    parser.add_argument("--base-url", default="http://127.0.0.1:8001", help="Base URL where server.py is running.")
     parser.add_argument(
         "--require-answer",
         action="store_true",

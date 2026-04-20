@@ -33,6 +33,7 @@ circuit_debug_api/artifacts/
 circuit_debug_api/assets_hybrid/
 circuit_debug_api/_backend_logs/
 circuit_debug_api/_smoke_logs/
+circuit_debug_api/.env
 circuit_debug_api/.env*.local
 circuit_debug_api/*.pid
 circuit_debug_api/*.log

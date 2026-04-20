@@ -12,7 +12,7 @@ import requests
 def parse_args() -> argparse.Namespace:
     """Parse CLI options for the demo debug client."""
     p = argparse.ArgumentParser(description="Example client for the Circuit Debug API")
-    p.add_argument("--base-url", default="http://127.0.0.1:8000")
+    p.add_argument("--base-url", default="http://127.0.0.1:8001")
     p.add_argument("--circuit", default=None, help="Optional exact circuit name. If omitted, uses the first circuit.")
     p.add_argument(
         "--payload-file",

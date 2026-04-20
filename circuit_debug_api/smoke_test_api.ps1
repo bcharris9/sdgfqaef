@@ -16,7 +16,7 @@ if (Test-Path $stdout) { Remove-Item $stdout -Force }
 if (Test-Path $stderr) { Remove-Item $stderr -Force }
 
 $p = Start-Process -FilePath $py `
-  -ArgumentList @("-m","uvicorn","server:app","--host","127.0.0.1","--port","8000") `
+  -ArgumentList @("-m","uvicorn","server:app","--host","127.0.0.1","--port","8001") `
   -WorkingDirectory (Get-Location).Path `
   -PassThru `
   -RedirectStandardOutput $stdout `
@@ -27,7 +27,7 @@ try {
   for ($i=0; $i -lt 90; $i++) {
     Start-Sleep -Seconds 1
     try {
-      $h = Invoke-RestMethod -Uri "http://127.0.0.1:8000/health" -TimeoutSec 5
+      $h = Invoke-RestMethod -Uri "http://127.0.0.1:8001/health" -TimeoutSec 5
       $ready = $true
       Write-Host "HEALTH:"
       $h | ConvertTo-Json -Depth 8
@@ -44,7 +44,7 @@ try {
   }
 
   & $py .\client_example.py `
-    --base-url http://127.0.0.1:8000 `
+    --base-url http://127.0.0.1:8001 `
     --circuit Lab1_1_0 `
     --demo-use-golden-values `
     --demo-offset-node N001 `

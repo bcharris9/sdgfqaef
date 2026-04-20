@@ -37,4 +37,4 @@ if ($RefreshModel -or -not (Test-Path ".\\assets_hybrid\\hybrid_config.json")) {
   & $Py .\\build_hybrid_assets.py
 }
 
-& $Py -m uvicorn server:app --host 127.0.0.1 --port 8000
+& $Py -m uvicorn server:app --host 127.0.0.1 --port 8001
